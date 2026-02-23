@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'defused';
+    src: url('../fonts/defused.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*CONFIGURAÇÕES GERAIS*/
 body {
     font-family: 'Orbitron', sans-serif;
@@ -25,14 +32,11 @@ header {
     border-bottom: 1px solid #222;
 }
 
-.logo {
-    color: #00ff88;
-    font-weight: bold;
-}
 
 .logo {
+    font-family: 'defused', sans-serif;
     color: #00ff88;
-    font-weight: bold;
+    font-size: 1.8rem;
     text-shadow: 0 0 8px #00ff88;
 }
 
@@ -41,10 +45,11 @@ header {
     padding: 160px 20px;
     text-align: center;
     background: linear-gradient(135deg, #111 60%, #003322);
+    min-height: 100vh;
 }
 
 .hero h1 {
-    font-size: 64px;
+    font-size: clamp(2rem, 5vw, 4rem);
     margin: 0 auto 25px auto;
     line-height: 1.6;
     text-transform: uppercase;
@@ -58,6 +63,52 @@ header {
     max-width: 650px;
     margin: 0 auto 40px auto;
     line-height: 1.6;
+}
+
+/* SEÇÃO PEDAIS */
+.pedais {
+    padding: 100px 0;
+    background-color: #111;
+    text-align: center;
+}
+
+.pedais h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.pedais-subtitulo {
+    color: #bbbbbb;
+    margin-bottom: 60px;
+}
+
+.pedais-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.pedal-card {
+    background-color: #1a1a1a;
+    padding: 30px 20px;
+    border: 1px solid #222;
+    transition: all 0.3s ease;
+}
+
+.pedal-card:hover {
+    transform: translateY(-8px);
+    border-color: #00ff88;
+    box-shadow: o 10px 25px rgba(0, 255, 136, 0.15);
+}
+
+.pedal-card h3 {
+    margin-bottom: 15px;
+    color: #00ff88;
+}
+
+.pedal-card p {
+    color: #cccccc;
+    font-size: 0.95rem;
 }
 
 /*BOTÃO*/
@@ -76,4 +127,20 @@ header {
     background-color: #00cc6a;
     box-shadow: 0 0 25px #00ff88;
     transform: scale(1.05);
+}
+
+/*responsividade mobile*/
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 20px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn-primary {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
 }

@@ -37,7 +37,7 @@ header {
     font-family: 'defused', sans-serif;
     color: #00ff88;
     font-size: 1.8rem;
-    text-shadow: 0 0 8px #00ff88;
+    text-shadow: 0 0 6.8px #00ff88;
 }
 
 /*HERO SECTION*/
@@ -58,7 +58,7 @@ header {
 }
 
 .hero p {
-    font-size: 20px;
+    font-size: 1.3rem;
     color: #bbbbbb;
     max-width: 650px;
     margin: 0 auto 40px auto;
@@ -93,6 +93,8 @@ header {
     padding: 30px 20px;
     border: 1px solid #222;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .pedal-card:hover {
@@ -101,15 +103,38 @@ header {
     box-shadow: o 10px 25px rgba(0, 255, 136, 0.15);
 }
 
+.pedal-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #00ff88;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.pedal-card:hover::before {
+    transform: scaleX(1);
+}
+
 .pedal-card h3 {
     margin-bottom: 15px;
     color: #00ff88;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .pedal-card p {
     color: #cccccc;
-    font-size: 0.95rem;
+    font-size: 0.98rem;
+    margin-top: 10px;
+    line-height: 1.6;
 }
+
 
 /*BOTÃO*/
 .btn-primary {
@@ -143,4 +168,127 @@ header {
         padding: 12px 20px;
         font-size: 14px;
     }
+}
+
+/*SEÇÃO AUTORIDADE*/
+.autoridade {
+    padding: 100px 0;
+    background: #111;
+    text-align: center;
+}
+
+.autoridade h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.autoridade-subtitulo {
+    color: #bbbbbb;
+    margin-bottom: 60px;
+}
+
+.autoridadade-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.autoridade-card {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #222;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.autoridade-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #00ff88;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    transform: translateY(-3px);
+    border-color: #00ff88;
+    box-shadow: 0 8px 20px rgba(0, 255, 136, 0.08);
+}
+
+.autoridade-card:hover::before {
+    transform: scaleX(1);
+}
+
+.autoridade-card h3 {
+    margin-bottom: 15px;
+    color: #00ff88;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.autoridade-card p {
+    color: #cccccc;
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+/*CTA FINAL*/
+.cta-final {
+    padding: 120px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #111, #002b1a);
+}
+
+.cta-final h2 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cta-final p {
+    color: #bbbbbb;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/*FOOTER*/
+.footer {
+    background: #0a0a0a;
+    padding: 60px 20px 20px;
+    border-top: 1px solid #1a1a1a;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space space-between;
+    align-items: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    font-family: 'defused', sans-serif;
+    font-size: 1.6rem;
+    color: #00ff88;
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    color: #555;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #1a1a1a;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9rem;
 }

@@ -340,3 +340,107 @@ section:not(:first-of-type)::before {
     opacity: 1;
     transform: translateY(0);
 }
+
+/*Formulário*/
+.contato {
+    padding: 120px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #0d0d0d, #001a10);
+}
+
+.contato h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contato-subtitulo {
+    color: #bbbbbb;
+    margin-bottom: 60px;
+}
+
+
+.form-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.form-contato input,
+.form-contato select,
+.form-contato textarea {
+    width: 100%;
+    padding: 12px;
+    padding: 12px;
+    background-color: #111;
+    border: 1px solid #222;
+    color: #fff;
+    border-radius: 6px;
+    font-family: 'Orbitron', sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s;
+    appearance: none;
+}
+
+.form-contato input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #111 inset !important;
+    -webkit-text-fill-color: #fff !important;
+}
+
+.form-contato input:focus,
+.form-contato select:focus,
+.form-contato textarea:focus {
+    outline: none;
+    border-color: #00ff88;
+    box-shadow: 0 0 8px rgba(0, 255, 136, 0.02);
+}
+
+.form-contato label {
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: #00ff88;
+    text-transform: uppercase;
+}
+
+.form-contato button {
+    font-family: 'orbitron', sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    min-width: 180px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.btn-secondary {
+    padding: 15px 24px;
+    background-color: transparent;
+    border: 1px solid #00ff88;
+    color: #00ff88;
+    border-radius: 6px;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #00ff88;
+    color: #000;
+}

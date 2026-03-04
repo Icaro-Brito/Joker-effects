@@ -1,15 +1,15 @@
 # 🎛 JokerFX
 
-Landing page moderna desenvolvida para divulgar pedais artesanais de guitarra, com foco em design minimalista, micro-interações elegantes e organização de código.
+Landing page desenvolvida para a marca autoral JokerFX, focada em pedais artesanais para guitarra e contrabaixo.
 
-Projeto desenvolvido como parte da construção do meu portfólio em Front-End.
+Projeto criado como estudo prático de Front-End, utilizando uma marca própria como contexto real de desenvolvimento. A proposta foi aplicar conceitos fundamentais sem recorrer a cópia de layouts prontos, priorizando entendimento estrutural, organização de código e boas práticas.
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
 - HTML5 (estrutura semântica)
-- CSS3 (Flexbox, Grid, responsividade)
+- CSS3 (Flexbox, Grid e responsividade)
 - JavaScript (Intersection Observer API)
 
 ---
@@ -19,27 +19,35 @@ Projeto desenvolvido como parte da construção do meu portfólio em Front-End.
 - Layout totalmente responsivo
 - Animação de entrada em cascata nos cards
 - Micro-interações com hover
-- Separação de responsabilidades para evitar conflitos de transform
-- Estrutura de código organizada e escalável
+- Estrutura organizada para evitar conflitos de `transform`
+- Código estruturado com foco em clareza e escalabilidade
+- Links funcionais para contato e redes sociais
 
 ---
 
 ## 🎯 Objetivo do Projeto
 
-Criar uma landing page moderna aplicando boas práticas de:
+Desenvolver uma landing page autoral aplicando boas práticas de:
 
 - Estruturação semântica
-- Organização de CSS
-- Manipulação do DOM
+- Organização e separação de responsabilidades no CSS
+- Manipulação do DOM com JavaScript puro
 - Animações performáticas sem uso de bibliotecas externas
+- Organização de projeto com mentalidade de produção
 
 ---
 
-## 📦 Próximas Implementações
+## 📬 Formulário
 
-- Formulário funcional com PHP
-- Integração para envio real de e-mail
-- Deploy público
+Estrutura preparada para envio de orçamento personalizado.
+
+Integração com backend em PHP para envio real de e-mails em fase final de implementação.
+
+---
+
+## 🌐 Projeto Publicado
+
+🔗 Acesse aqui: https://jokerfx.infinityfreeapp.com
 
 ---
 
@@ -52,4 +60,6 @@ Criar uma landing page moderna aplicando boas práticas de:
 
 ## 👨‍💻 Autor
 
-Desenvolvido por [Ícaro Brito]
+Desenvolvido por Ícaro Brito  
+Técnico em Eletrônica em transição de carreira para Desenvolvimento Front-End.  
+Buscando oportunidades como Desenvolvedor Júnior.
